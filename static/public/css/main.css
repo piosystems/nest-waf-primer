@@ -194,3 +194,7 @@ html{
     width:auto;
 }
 
+.container {
+    border:0;
+}
+
