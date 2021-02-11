@@ -35,13 +35,13 @@ export class StudentsController {
   /** Work on relationships */
 
   @Patch(':studentId/user/userId')
-  setUserById(@Param('studentId') studentId: number, @Param('userId') userId: number) {
-    return this.studentsService.setUserById(studentId, userId);
+  setUserById(@Param('studentId') studentId: string, @Param('userId') userId: string) {
+    return this.studentsService.setUserById(+studentId, +userId);
   }
 
   @Delete(':studentId/user')
-  unsetUserById(@Param('studentId') studentId: number) {
-    return this.studentsService.unsetUserById(studentId);
+  unsetUserById(@Param('studentId') studentId: string) {
+    return this.studentsService.unsetUserById(+studentId);
   }
 
 }
