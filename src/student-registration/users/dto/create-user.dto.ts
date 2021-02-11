@@ -8,4 +8,5 @@ export class CreateUserDto {
     readonly nationality?: string
     readonly address?: string
     readonly isActive?: boolean;
+    
 }
