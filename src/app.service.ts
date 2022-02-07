@@ -8,7 +8,7 @@ export class AppService {
   }
 
   getAboutUs(): {} {
-    return {title: 'About Us Page'};
+    return {title: 'About Us Page'}; 
   }
 
   getHello(): string {
